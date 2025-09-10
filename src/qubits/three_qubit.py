@@ -377,3 +377,27 @@ def main():
 
 if __name__ == "__main__":
     simulator, final_state = main()
+def main():
+    """Main entry point for command line usage."""
+    print("Starting 3-qubit quantum circuit simulation...")
+    
+    # Create simulator instance
+    simulator = QuantumCircuitSimulator()
+    
+    # Demonstrate basic functionality
+    print("Creating Hadamard gate...")
+    h_gate = simulator.create_hadamard()
+    print(f"Hadamard gate shape: {h_gate.shape}")
+    
+    print("Testing tensor product...")
+    result = simulator.tensor_product([np.eye(2), h_gate])
+    print(f"Tensor product result shape: {result.shape}")
+    
+    print("Creating CNOT gate...")
+    cnot = simulator.apply_cnot_gate(0, 1, 3)
+    print(f"CNOT gate shape: {cnot.shape}")
+    
+    print("3-qubit simulation demo completed successfully!")
+
+if __name__ == "__main__":
+    main()

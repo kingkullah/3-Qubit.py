@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "three-qubit-simulation"
+version = "0.1.0"
+description = "A Python package for simulating 3-qubit quantum circuits"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "kingkullah", email = "your.email@example.com"}
+]
+keywords = ["quantum", "simulation", "qubits", "quantum-computing"]
+dependencies = [
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "scipy>=1.10.0",
+]
+
+[project.optional-dependencies]
+qiskit = ["qiskit>=0.45.0"]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "flake8>=6.0.0",
+    "black>=23.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/kingkullah/3-Qubit.py"
+
+[tool.setuptools.packages.find]
+where = ["src"]
