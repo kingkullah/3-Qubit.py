@@ -1,3 +1,67 @@
+## Quantum Computing Experiments
+- 3-Qubit quantum state simulations
+- Superposition and entanglement demonstrations
+- Gate visualizations
+
+## Cybersecurity & Tunnels
+- Custom tunneling and proxy modules
+- Security-focused experiments
+- Monitoring tools
+
+## Portfolio Highlights
+- Modular code under `src/`
+- Unit tests in `tests/`
+- CI/CD workflows
+- Combined IPTV, Quantum, and Cybersecurity portfolio project
+mmmmmmmmmmmmmmmmmmmmmmmmmmmm6# 3-Qubit Quantum Circuit Simulation
+
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/kingkullah/3-Qubit.py/actions/workflows/python-ci.yml/badge.svg)](https://github.com/kingkullah/3-Qubit.py/actions/workflows/python-ci.yml)
+[![Coverage Status](https://coveralls.io/repos/github/kingkullah/3-Qubit.py/badge.svg?branch=main)](https://coveralls.io/github/kingkullah/3-Qubit.py?branch=main)
+
+---
+
+## Overview
+
+A Python implementation for simulating 3-qubit quantum circuits, demonstrating quantum gates, superposition, and entanglement. This project is structured to showcase professional coding practices and portfolio-quality work.
+
+---
+
+## Features
+
+- 3-qubit quantum state simulation  
+- Support for common quantum gates (Hadamard, CNOT, Pauli gates)  
+- Interactive visualization capabilities  
+- Measurement probability calculations  
+- Extensible framework for quantum circuit experiments  
+
+---
+
+## Portfolio Highlights
+
+This repository demonstrates a fully structured Python project implementing a three-qubit quantum system. The project follows professional development standards:
+
+- **Organized source code** in `src/` with clear module structure.  
+- **Unit tests** included in `tests/` to ensure correctness and maintainability.  
+- **Continuous Integration (CI)** configured via GitHub Actions (`.github/workflows/python-ci.yml`) to automatically run tests on every commit.  
+- **Version control best practices** using Git branches and SSH authentication for secure, professional workflow.  
+- **Dependencies and project configuration** managed with `pyproject.toml` and `requirements.txt`.  
+
+This setup illustrates an end-to-end professional workflow, demonstrating skills in **Python development, testing, CI/CD, and Git/GitHub workflows**, making it an ideal example for a coding portfolio.
+
+---
+
+## Installation (Ubuntu/WSL2)
+
+### Prerequisites
+
+```bash
+# Update package list
+sudo apt update
+
+# Install Python 3.10+ and pip
+sudo apt install -y python3 python3-pip python3-venv
 ## Features
 - 3-qubit quantum state simulation
 - Support for common quantum gates (Hadamard, CNOT, Pauli gates)
