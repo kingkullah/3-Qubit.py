@@ -1,3 +1,23 @@
+## Features
+- 3-qubit quantum state simulation
+- Support for common quantum gates (Hadamard, CNOT, Pauli gates)
+- Interactive visualization capabilities
+- Measurement probability calculations
+- Extensible framework for quantum circuit experiments
+
+## Portfolio Overview
+
+This repository demonstrates a fully structured Python project implementing a three-qubit quantum system. The project follows professional development standards:
+
+- **Organized source code** in `src/` with clear module structure.
+- **Unit tests** included in `tests/` to ensure correctness and maintainability.
+- **Continuous Integration (CI)** configured via GitHub Actions (`.github/workflows/python-ci.yml`) to automatically run tests on every commit.
+- **Version control best practices** using Git branches and SSH authentication for secure, professional workflow.
+- **Dependencies and project configuration** managed with `pyproject.toml` and `requirements.txt`.
+
+This setup illustrates an end-to-end professional workflow, demonstrating skills in **Python development, testing, CI/CD, and Git/GitHub workflows**, making it an ideal example for a coding portfolio.
+
+## Installation (Ubuntu/WSL2)
 # 3-Qubit Quantum Circuit Simulation
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
