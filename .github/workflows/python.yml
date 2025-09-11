@@ -1,0 +1,41 @@
+name: Python Quantum CI
+
+on:
+  push:
+    branches: [ main, add-quantum-cyber-tunnels ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: [3.12]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        python -m venv .venv
+        source .venv/bin/activate
+        pip install --upgrade pip
+        pip install qiskit flake8
+
+    - name: Run flake8
+      run: |
+        source .venv/bin/activate
+        flake8 src/ --max-line-length=88 --extend-ignore=E203,W503
+
+    - name: Run test script
+      run: |
+        source .venv/bin/activate
+        python test_three_qubit.py
